@@ -1,0 +1,280 @@
+@font-face {
+  font-family: roboto;
+  src: url("/Fonts/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: anton;
+  src: url("/Fonts/Anton-Regular.ttf");
+}
+
+@font-face {
+  font-family: lemonada;
+  src: url("/Fonts/Lemonada-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: dohyeon;
+  src: url("/Fonts/DoHyeon-Regular.ttf");
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+
+#navbar-brand {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-right: 30px;
+  color: black;
+}
+
+#logo {
+  width: 70px;
+  height: 50px;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+
+.nav>li>a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav>li>a:hover {
+  background-color: transparent !important;
+}
+
+.nav>li {
+  font-size: 30px;
+  text-align: center;
+}
+
+.nav>li {
+  margin-top: 15px;
+}
+
+#icbar1,
+#icbar2,
+#icbar3 {
+  background-color: black;
+  margin-bottom: 7px;
+}
+
+#icbar2 {
+  width: 60%;
+}
+
+#icbar1 {
+  margin-top: 10px;
+}
+
+#top_div {
+  text-align: center;
+  height: 600px;
+  width: 100%;
+  background: url("/Images/stars.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 700;
+}
+
+
+
+#lgn {
+  position: absolute;
+  width: 100px;
+  padding: 10px;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: 2px solid #fbb803;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 25px;
+  color: white;
+  font-family: roboto;
+  outline: none;
+}
+
+#lgn:hover {
+  border-color: #4eff00;
+}
+
+.bubble_back {
+  width: 50%;
+}
+
+#brand {
+  padding: 70px;
+  color: #3E3C86;
+  font-size: 80px;
+  font-family: dohyeon;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-shadow: 5px 5px 8px black;
+  top: 100px;
+}
+
+#moto {
+  font-family: roboto;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+}
+
+#text {
+  margin-top: 500px;
+  padding: 30px;
+  font-size: 40px;
+}
+
+#wave_div {
+  position: absolute;
+  width: 100%;
+  margin-top: -100px;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+#water_below_div {
+  background-color: #052B39;
+  height: 500px;
+  width: 100%;
+  z-index: 900;
+}
+
+#soil {
+  width: 100%;
+  height: 600px;
+  background: url("/Images/20483.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#bedrock {
+  width: 100%;
+  margin-top: -250px;
+  height: 100%;
+  z-index: 800;
+}
+
+#bdrk {
+  width: 100%;
+  height: 100%;
+}
+
+#core {
+  margin-top: -170px;
+  height: 500px;
+  background: #f857a6;
+  background: -webkit-linear-gradient(to top, #ff5858, #f857a6);
+  background: linear-gradient(to top, #ff5858, #f857a6);
+}
+
+@media (max-width: 768px) {
+
+  #ul_div {
+    background-color: #EABB5F;
+    position: fixed;
+    left: 0;
+    width: 100%;
+  }
+
+  #bedrock {
+    height: 500px;
+  }
+
+  #brand {
+    padding: 15%;
+    font-size: 50px;
+  }
+
+  #lgn {
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  #top_div {
+    height: 560px;
+  }
+
+  #bubb1 {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .nav>li {
+    padding: 10px;
+  }
+
+  .waves {
+    height: 100px;
+    min-height: 100px;
+  }
+
+  .content {
+    height: 30vh;
+  }
+
+  #navbar-brand {
+    margin-top: 15px;
+    font-size: 35px;
+  }
+}

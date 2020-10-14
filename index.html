@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/index.css" />
+  <title>Delta Devops</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="JS/typing-effect.js"></script>
+</head>
+
+<body>
+  <div style="position: fixed;width: 100%;left: 0; top: 0; height: 80px; background-color: white; z-index: 999;">
+    <nav class="navbar">
+      <div class="container-fluid" style="padding: 0;">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" onclick="check()">
+            <span id="icbar1" class="icon-bar"></span>
+            <span id="icbar2" class="icon-bar"></span>
+            <span id="icbar3" class="icon-bar"></span>
+          </button>
+          <p id="navbar-brand"><img id="logo" src="/Images/delta-logo.png"> Delta DevOps</p>
+        </div>
+        <div id="ul_div">
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Page 1</a></li>
+              <li><a href="#">Page 2</a></li>
+              <li><a href="#">Page 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div id="top_div" style="margin-top: 80px;">
+    <img id="bubb1" class="bubble_back" src="Images/bubble1.png" />
+    <p id="brand">
+      <strong>Welcome to Delta DevOps</strong><br /><span id="moto"></span>
+    </p>
+    <button id="lgn">Login</button>
+  </div>
+
+  <div id="wave_div">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(5, 43, 57,1)" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(5, 43, 57,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(5, 43, 57,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(5, 43, 57,0.3)" />
+      </g>
+    </svg>
+  </div>
+  <div id="water_below_div"></div>
+  <div id="soil"></div>
+  <div id="bedrock">
+    <img src="/Images/bedrock.png" id="bdrk" />
+  </div>
+
+  <div id="core">
+    <canvas style="margin-top: 200px;" id="lamp-anim" class="lamp-anim"></canvas>
+  </div>
+
+  <script src="JS/main.js"></script>
+  <script src="JS/core-effect.js"></script>
+  <script>
+    $(".lamp-anim").css("width", "100%");
+    $(".lamp-anim").css("height", "300px");
+  </script>
+
+  <script>
+    Moto();
+  </script>
+</body>
+
+</html>
